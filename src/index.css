@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  /* scrollbar-width: thin;  For Firefox  */
+}
+
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0; /* Safari and Chrome */
+  height: 0; /* Safari and Chrome */
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  /* display: none; */
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar-track {
+  background: #0f4a63;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #48b5f0, #a071c4);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to right, #a071c4, #48b5f0);
+  border-radius: 10px;
+}
+
+/* Media query to hide scrollbar for screens smaller than 768px */
+@media (max-width: 767px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.gradient,
+.active {
+  background: linear-gradient(57.4deg, rgb(188, 82, 249) 4.6%, rgb(247, 106, 162) 29.1%, rgb(94, 171, 243) 76.5%);
+}
+
+.active {
+  color: #fff;
+  border-radius: 100%;
+  padding: 6px;
+}
+
+.setBackground {
+  position: relative;
+  overflow: hidden;
+  /* background-image: linear-gradient(to left, #1c132e, #14141b); */
+  background-color: #0e1622;
+}
+
+/* .img {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 3px #2e86de);
+} */
+
+.img1 {
+  cursor: pointer;
+  filter: drop-shadow(0px 8px 6px #2e86de);
+}
+
+.content {
+  background: #14141b;
+  position: relative;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 2px;
+  width: 120px;
+}
+
+.content::after,
+.content::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: conic-gradient(from var(--angle), transparent 70%, #48b5f0, #995ec6, #d76571);
+  border-radius: 8px;
+  z-index: -1;
+  filter: blur(3px);
+  opacity: 1;
+  animation: rotate 4s linear infinite;
+}
+
+.bounce {
+  animation: bounce 1.5s linear infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+.spin {
+  animation: spin 10s linear infinite alternate;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+/* .image {
+  border-image : fill 0 linear-gradient(#0003, #000)
+} */
+
+@layer base {
+  body {
+    @apply font-secondary text-lg leading-8 text-white;
+  }
+  .h2 {
+    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+  .h3 {
+    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+  }
+  .btn {
+    @apply rounded-full text-white hover:text-black tracking-widest font-extrabold bg-gradient-to-r transition-all ease-in-out duration-500 brightness-110 hover:font-extrabold from-[#2e86de] via-[#A071C4] to-[#D76571] hover:from-[#D76571] hover:via-[#A071C4] hover:to-[#2e86de] hover:brightness-110;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  /* .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text brightness-150 hover:brightness-200 from-[#5082EE] to-[#a868f6] font-extrabold hover:from-[#f238f8] hover:to-[#359ee0];
+  } */
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text brightness-150 hover:brightness-150 from-[#2e86de] via-[#A071C4] to-[#D76571] font-extrabold hover:from-[#D76571] hover:via-[#A071C4] hover:to-[#2e86de];
+  }
+}
