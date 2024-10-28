@@ -35,7 +35,7 @@ export const data = [
     img: portfolioPic,
     title: "My Portfolio",
     desc: "React.js, Tailwind CSS, Aos Library",
-    link: "https://onkar-portfolio-website.netlify.app/",
+    link: "https://onkarkarale-portfolio.netlify.app/",
     git: "https://github.com/onkar895/ONKAR-PORTFOLIO",
   },
   {
