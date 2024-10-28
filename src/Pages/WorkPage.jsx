@@ -5,7 +5,7 @@ import Footer from '../Components/Footer'
 
 const WorkPage = () => {
   return (
-    <div className='my-28 flex flex-col gap-y-8 md:mx-0 md:px-6 px-2 sm:px-8 lg:px-20'>
+    <div data-aos="zoom-in" data-aos-duration="2000" className='my-28 flex flex-col gap-y-8 md:mx-0 md:px-6 px-2 sm:px-8 lg:px-20'>
       <Work />
       <Footer />
       <div className='text-center mt-20 text-xs'>

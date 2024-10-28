@@ -1,9 +1,10 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 
 const ParticleBackground = () => {
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none ">
-      {Array.from({ length: 100 }).map((_, i) => {
+      {Array.from({ length: 80 }).map((_, i) => {
         const duration = 4 + Math.random() * 10;
         return (
           <div

@@ -6,7 +6,7 @@ import Footer from '../Components/Footer';
 
 const ContactPage = () => {
   return (
-    <div className='my-24 md:mx-0 flex flex-col gap-y-8 md:px-6 px-2 sm:px-8 lg:px-20'>
+    <div data-aos="zoom-in" data-aos-duration="2000" className='my-24 md:mx-0 flex flex-col gap-y-8 md:px-6 px-2 sm:px-8 lg:px-20'>
       <Contact />
       <Footer />
       <div className='text-center mt-20 text-xs'>

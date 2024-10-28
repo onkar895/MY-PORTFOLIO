@@ -5,7 +5,7 @@ import Footer from '../Components/Footer'
 
 const AboutPage = () => {
   return (
-    <div className='my-20 mt-12 max-sm:mt-16 md:mx-0 flex flex-col gap-y-8 md:px-6 px-2 sm:px-8 lg:px-20'>
+    <div data-aos="zoom-in" data-aos-duration="2000" className='my-20 mt-12 max-sm:mt-16 md:mx-0 flex flex-col gap-y-8 md:px-6 px-2 sm:px-8 lg:px-20'>
       <About />
       <Footer />
       <div className='text-center mt-20 text-xs'>

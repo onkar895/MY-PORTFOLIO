@@ -23,7 +23,6 @@ function App() {
 
     // debounce(handleScroll, 200) delays the execution of handleScroll by 200 milliseconds. So, if the user keeps scrolling, handleScroll will only be called after they've stopped for at least 200ms. This prevents the handleScroll function from being called too frequently, which could cause performance issues.
     const debouncedHandleScroll = debounce(handleScroll, 200);
-
     window.addEventListener('scroll', debouncedHandleScroll);
 
     return () => {
@@ -34,15 +33,15 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 3000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className={loading ? "setBackground w-full h-screen flex items-center justify-center" : "setBackground w-full flex items-center justify-center"}>
+    <div className={loading ? "setBackground w-full h-screen flex items-center justify-center" : "setBackground w-full flex items-center justify-center relative overflow-hidden"}>
       <ParticleBackground />
       {loading ? (
-        <BeatLoader className="text-gradient" size={50} color={"#D76571"} />
+        <BeatLoader className="text-gradient" size={50} color={"#48b5f0"} />
       ) : (
         <Router>
           <Header />

@@ -21,11 +21,11 @@ const Experience = () => {
           <ul className='my-4'>
             <li className='mb-2 max-sm:mb-3 flex items-center gap-2'>
               <MdOutlineRemove className='font-extrabold text-white text-xl max-sm:hidden' />
-              Designed and delivered impactful, scalable user interfaces using React.js, optimized development efficiency through the creation of modular, reusable components that improved code maintainability and reduced complexity.
+              Designed and delivered impactful, scalable user interfaces using React.js, optimized development with modular, reusable components that enhanced code maintainability and reduced complexity.
             </li>
             <li className='mb-2 max-sm:mb-3 flex items-center gap-2'>
               <MdOutlineRemove className='font-extrabold text-2xl text-white max-sm:hidden' />
-              Worked closely with designers to provide actionable feedback on UI/UX improvements that enhanced the overall application flow. Actively contributed to code reviews, identifying and resolving bugs, and implementing best practices for cleaner, and more maintainable code.
+              Worked closely with the design team to provide strategic insights on improving interface elements to elevate application flow and functionality. Played a proactive role in code reviews, identifying and resolving bugs and applying best practices for clean, maintainable code.
             </li>
             <li className='mb-2 max-sm:mb-3 flex items-center gap-2'>
               <MdOutlineRemove className='font-extrabold max-sm:text-xl text-white max-sm:hidden' />
