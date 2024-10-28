@@ -22,7 +22,7 @@ const Education = () => {
   // ];
 
   return (
-    <div className="w-full h-auto shadow-inner shadow-[#789fef] hover:shadow-lg hover:shadow-[#789fef] bg-[#141d2a] hover:bg-black/40 rounded-xl py-6 px-5 overflow-hidden cursor-pointer hover:scale-95 transition-all duration-700 grow">
+    <div className="w-full h-auto shadow-inner shadow-[#789fef] hover:shadow-lg hover:shadow-[#789fef] bg-[#141d2a] hover:bg-black/40 rounded-xl py-6 px-5 overflow-hidden cursor-pointer hover:scale-95 transition-all duration-500 grow">
       <h3 className="font-bold lg:text-lg text-xl text-center text-gradient hover:text-gradient tracking-wider">Education</h3>
       <div className="block mx-auto lg:gap-y-8 space-y-10">
         <div className="flex space-x-3 mt-10 lg:mx-0 mx-auto">

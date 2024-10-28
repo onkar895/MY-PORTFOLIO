@@ -1,97 +1,26 @@
 /* eslint-disable no-unused-vars */
-import React, { useCallback } from "react";
-
-import { Particles } from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import React from 'react';
 
 const ParticlesContainer = () => {
-  // init
-  const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(async () => { }, []);
-
   return (
-    <Particles
-      className="w-full h-full absolute top-0 left-0 z-0"
-      id="tsparticles"
-      init={particlesInit}
-      loaded={particlesLoaded}
-      options={{
-        fullScreen: { enable: true },
-        background: {
-          color: {
-            value: "",
-          },
-        },
-        fpsLimit: 120,
-        interactivity: {
-          events: {
-            onclick: {
-              enable: false,
-              mode: "push",
-            },
-            onhover: {
-              enable: true,
-              mode: "repulse",
-            },
-            resize: true,
-          },
-          modes: {
-            push: {
-              quantity: 90,
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
-            },
-          },
-        },
-        particles: {
-          color: {
-            value: "#e68e2e",
-          },
-          links: {
-            color: "#ffffff",
-            distance: 150,
-            enable: true,
-            opacity: 0.5,
-            width: 1,
-          },
-          collisions: {
-            enable: true,
-          },
-          move: {
-            direction: "none",
-            enable: true,
-            outMode: {
-              default: "bounce",
-            },
-            random: false,
-            speed: 1,
-            straight: false,
-          },
-          number: {
-            density: {
-              enable: true,
-              area: 800,
-            },
-            value: 80,
-          },
-          opacity: {
-            value: 0.5,
-          },
-          shape: {
-            type: "circle",
-          },
-          size: {
-            value: { min: 1, max: 5 },
-          },
-        },
-        detectRetina: true,
-      }}
-    />
+    <div className="fixed inset-0 overflow-hidden pointer-events-none ">
+      {Array.from({ length: 80 }).map((_, i) => {
+        const duration = 4 + Math.random() * 10;
+        return (
+          <div
+            key={i}
+            className="absolute w-[2.5px] h-[2.5px] opacity-10 bg-white rounded-full animate-pulse"
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              '--color': 'white',
+              '--duration': `${duration}s`,
+              animationDelay: `${Math.random() * 5}s`,
+            }}
+          ></div>
+        );
+      })}
+    </div>
   );
 };
 

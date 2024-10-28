@@ -38,7 +38,7 @@ function App() {
   }, []);
 
   return (
-    <div className={loading ? "setBackground w-full h-screen flex items-center justify-center" : "setBackground w-full flex items-center justify-center relative overflow-hidden"}>
+    <div className={loading ? "setBackground w-full min-h-screen flex items-center justify-center" : "setBackground w-full min-h-screen flex items-center justify-center relative overflow-hidden"}>
       <ParticleBackground />
       {loading ? (
         <BeatLoader className="text-gradient" size={50} color={"#48b5f0"} />

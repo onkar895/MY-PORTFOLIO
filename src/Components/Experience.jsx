@@ -4,7 +4,7 @@ import { MdOutlineRemove } from "react-icons/md";
 
 const Experience = () => {
   return (
-    <div className='w-full shadow-inner shadow-[#789fef] hover:shadow-lg hover:shadow-[#789fef] bg-[#141d2a] hover:bg-black/40 rounded-xl py-6 px-5 overflow-hidden cursor-pointer hover:scale-95 transition-all duration-700'>
+    <div className='w-full shadow-inner shadow-[#789fef] hover:shadow-lg hover:shadow-[#789fef] bg-[#141d2a] hover:bg-black/40 rounded-xl py-6 px-5 overflow-hidden cursor-pointer hover:scale-95 transition-all duration-500'>
       <h3 className="font-extrabold lg:text-lg text-xl text-center text-gradient hover:text-gradient tracking-wider">Experience</h3>
       <div className='my-5'>
         <div className='flex items-center justify-between flex-wrap max-sm:justify-center max-sm:gap-2'>

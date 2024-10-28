@@ -22,7 +22,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="w-full h-auto shadow-inner shadow-[#789fef] hover:shadow-lg hover:shadow-[#789fef] bg-[#141d2a] hover:bg-black/40 rounded-xl py-6 md:px-7 overflow-hidden cursor-pointer hover:scale-95 transition-transform duration-700 grow">
+    <div className="w-full h-auto shadow-inner shadow-[#789fef] hover:shadow-lg hover:shadow-[#789fef] bg-[#141d2a] hover:bg-black/40 rounded-xl py-6 md:px-7 overflow-hidden cursor-pointer hover:scale-95 transition-transform duration-500 grow">
       <h3 className="lg:text-lg text-xl text-center text-gradient hover:text-gradient tracking-wider">Skills</h3>
       <div className="flex flex-wrap justify-center lg:gap-x-10 md:gap-x-24 gap-x-20 gap-y-10 py-10">
         {
