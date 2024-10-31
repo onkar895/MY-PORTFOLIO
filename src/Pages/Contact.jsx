@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-unused-vars */
 import React, { useRef, useState, useEffect } from 'react';
 import Connect from '../Components/Connect';
 import emailjs from "@emailjs/browser";
@@ -32,7 +34,7 @@ const Contact = () => {
         "service_zfnu9rj",
         "template_gkienm2",
         formRef.current,
-        "zVUcPAe7d32vL9H0p"
+        "LwMYiMg5xllfy3Kca"
       )
       .then(
         (result) => {
